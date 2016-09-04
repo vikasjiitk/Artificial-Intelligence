@@ -1,0 +1,87 @@
+<html>
+<title> HW3 </title>
+<style>
+p{
+	width: 100%;
+	font-family: sans-serif;
+	font-size: 20px;
+	opacity: 0.8;
+	float:left;
+}
+h1,h2,h3{
+	width: 100%;
+	font-family: sans-serif;
+	opacity: 0.8;
+	float:left;
+}
+h1.c,h3.c{
+	text-align: center;
+}
+div.img {
+    margin: 5px;
+    width: 100%;
+    padding: 5px;
+	float: left;  
+    text-align: center;
+}
+p.small{
+	width: 100%;
+	font-family: sans-serif;
+	font-size: 12px;
+	opacity: 0.95;
+	float:left;
+}
+</style>
+<body>
+<h1 class="c">CS365A: HOME ASSIGNMENT 3</h1>
+<h3 class="c">Vikas Jain<br>13788<br>Department of Computer Science and Engineering, IITK</h3>
+<h2>REDUNDANT ROBOT MOTION PLANNING USING PRM</h2>
+<h4> Number of configuration generated: 30000</h4>
+<h4> Number of neighbours in graph generated: 5</h4>
+<h3> 5 Degree of Freedom</h3>
+<p>The map of required motion is shown below:</p>
+<p class="small">If image doesn't appear <a href="images/map.gif">See here</a></p>
+<div class="img">
+ <a target="_blank" href="images/map.gif"><img src="images/map.gif" alt="" width="500px" height="500px"></a>
+</div><br>
+<p> Animation images of robot motion for dof=5:</p>
+<div>
+    <h4> <a href="images/goal1-2.gif">Start to Goal_1</a></h4>
+    <h4> <a href="images/goal2-3.gif">Goal_1 to Goal_2</a></h4>	
+    <h4> <a href="images/goal3-4.gif">Goal_2 to Goal_3</a></h4>
+    <h4> <a href="images/goal4-5.gif">Goal_3 to Goal_4</a></h4>
+    <h4> <a href="images/goal5-6.gif">Goal_4 to Goal_5</a></h5>
+    
+</div>
+
+<h3> 2 Degree of Freedom </h3>
+<p>The map of required motion is shown below:</p>
+<p class="small">If image doesn't appear <a href="images/map2.gif">See here</a></p>
+<div class="img">
+ <a target="_blank" href="images/map2.gif"><img src="images/map2.gif" alt="" width="500px" height="500px"></a>
+</div><br>
+<p>The C-space generated is shown below:</p>
+<p class="small">If image doesn't appear <a href="images/c-space.png">See here</a></p>
+<div class="img">
+ <a target="_blank" href="images/c-space.gif"><img src="images/c-space.png" alt="" width="500px" height="500px"></a>
+</div><br>
+
+<div style="clear: left;">
+<h3> Discussion </h3>
+
+<p> The line obstacles are considered as lines becuase of simplicity but they are region in actual as they are covering region on a map. </p> 
+
+
+<p> Minimum DOF = 4 will be redundant because robot arm can move only in 3 dimensions and above it will become redundant. </p> 
+
+
+</div>
+
+<div style="clear: left;">
+<h2> Source Code Language: Python </h2>
+<h2><a href="https://github.com/vikasjiitk/articulated-robot-motion-planning"> Code </a> </h2>
+<p>See github repository with complete information in readme file</p>   
+</div>
+
+</body>
+</html>

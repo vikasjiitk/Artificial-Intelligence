@@ -1,0 +1,218 @@
+<html>
+<title>CS365 Homework 1</title>
+<style>
+h1{
+	font-family: sans-serif;
+	background-color: black;
+	text-align: center;
+	color: white;
+	opacity: 0.8;
+}
+h2{
+	font-family: sans-serif;
+	opacity: 0.6;
+	color: navy;
+}
+h1.padding{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+div{
+	padding-left: 20px;
+}
+div1{
+	
+	font-family: sans-serif;
+	font-size: 25px;
+}
+body{
+	background-color: white;
+}
+p{
+	width: 100%;
+	font-family: sans-serif;
+	font-size: 20px;
+	opacity: 0.8;
+	float:left;
+}
+body.padding{
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+div.img {
+    margin: 5px;
+    padding: 5px;
+	float: left;  
+    text-align: center;
+}	
+
+div.desc {
+  
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+}
+</style>
+<body class=padding>
+	<h1 class="padding">CS365A-Homework-1</h1>
+	<h2>Curve Fitting using Small Training Set</h2>
+	<p>
+		For the given small training set, the curve is trained for degree of polynomials M=0,1,2,3,5,9 using the <u>polyfit function</u> in MATLAB. Below are the plots of fitted curve on the data for different degrees of ploynomials.(click on images for enlarge view)
+	</p>
+	<br>
+<div class="img">
+ <a target="_blank" href="images/m0_train_s.jpg"><img src="images/m0_train_s.jpg" alt="" width="374px" height="280px"></a>
+ <div class="desc">M=0</div>
+</div>
+<div class="img">
+ <a target="_blank" href="images/m1_train_s.jpg"><img src="images/m1_train_s.jpg" alt="" width="374px" height="280px"></a>
+ <div class="desc">M=1</div>
+</div>
+<div class="img">
+ <a target="_blank" href="images/m2_train_s.jpg"><img src="images/m2_train_s.jpg" alt="" width="374px" height="280px"></a>
+ <div class="desc">M=2</div>
+</div>
+<div class="img">
+ <a target="_blank" href="images/m3_train_s.jpg"><img src="images/m3_train_s.jpg" alt="" width="374px" height="280px"></a>
+ <div class="desc">M=3</div>
+</div>
+<div class="img">
+ <a target="_blank" href="images/m5_train_s.jpg"><img src="images/m5_train_s.jpg" alt="" width="374px" height="280px"></a>
+ <div class="desc">M=5</div>
+</div>
+ <div class="img">
+ <a target="_blank" href="images/m9_train_s.jpg"><img src="images/m9_train_s.jpg" alt="" width="374px" height="280px"></a>
+ <div class="desc">M=9</div>
+</div>
+<br>
+<table style="width:100%">
+  <tr>
+    <th>Cofficients</th>
+    <th>M=0</th>		
+    <th>M=1</th>
+    <th>M=2</th>
+    <th>M=3</th>
+    <th>M=5</th>
+    <th>M=9</th>
+  </tr>
+  <tr>
+  	<td>w0</td>
+    <td>156.4500672</td>
+    <td>-82.81867598</td>		
+    <td>27.8869657</td>
+    <td>-85.14309267</td>
+    <td>-6420.096253</td>
+    <td>2079030.462</td>
+  </tr>
+  <td>w1</td>
+  <td> </td>
+    <td>50.37236699</td>		
+    <td>-0.930247453</td>
+    <td>79.67960481</td>
+    <td>7804.795217</td>
+    <td>-4377092.014</td>
+  <tr>
+    
+  </tr>
+  <tr>
+  	<td>w2</td>
+    <td> </td>
+    <td> </td>		
+    <td>5.400275204</td>
+    <td>-12.5410039</td>
+    <td>-3647.89865</td>
+    <td>4028322.834</td>
+  </tr>
+  <tr>
+  	<td>w3</td>
+    <td> </td>
+    <td> </td>		
+    <td> </td>
+    <td>1.25903713</td>
+    <td>827.5881113</td>
+    <td>-2128283.164</td>
+  </tr>
+  <tr>
+  	<td>w4</td>
+    <td> </td>
+    <td> </td>		
+    <td> </td>
+    <td> </td>
+    <td>-90.90930076</td>
+    <td>711845.7707</td>
+  </tr>
+  <tr>
+  	<td>w5</td>
+    <td> </td>
+    <td> </td>		
+    <td> </td>
+    <td> </td>
+    <td>3.882000605</td>
+    <td>-156416.6016</td>
+  </tr>
+  <tr>
+  	<td>w6</td>
+    <td> </td>
+    <td> </td>		
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td>22595.02166</td>
+  </tr>
+  <tr>
+  	<td>w7</td>
+    <td> </td>
+    <td> </td>		
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td>-2070.436778</td>
+  </tr>
+  <tr>
+  	<td>w8</td>
+    <td> </td>
+    <td> </td>		
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td>109.2688288</td>
+  </tr>
+  <tr>
+  	<td>w8</td>
+    <td> </td>
+    <td> </td>		
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td>-2.531984164</td>
+  </tr>
+</table>
+
+<p>
+	The result for different degree of polynomial for small train data is very scattered and cannot be told by just visualisation though M=9 is giving zero error on training set. Now, each model is applied to test data and based on the error obtained for training and test data, best curve fit is obtained.
+</p>
+<div class="img">
+ <a target="_blank" href="images/err_train_S.jpg"><img src="images/err_train_S.jpg" alt="" width="374px" height="280px"></a>
+ <div class="desc">Error(rms) for training set</div>
+</div>
+<div class="img">
+ <a target="_blank" href="images/err_test.jpg"><img src="images/err_test.jpg" alt="" width="374px" height="280px"></a>
+ <div class="desc">Error(rms) for Test set</div>
+</div>
+<br>
+<p>
+	Error Plot for Validation set for different degreee polynomials.<br></p>
+	<br>
+<div class="img">
+ <a target="_blank" href="images/err_valid.jpg"><img src="images/err_valid.jpg" alt="" width="374px" height="280px"></a>
+ <div class="desc">Error(rms) for Validation set</div>
+</div>
+<p> 
+	From the error plot on validation set, it can be deduced that optimal degree M is 2 and quadratic equation model is optiaml as it has the least error for validation set when curve is trained on small training set. It is different from what we get from error plot of training set as its error keep on reducing for higher degree polynomial and apparantly 0 for M=9. Also test data is suggesting that M=2 is the optimal model among different curve fits.<br><br>
+</p>
+</body>

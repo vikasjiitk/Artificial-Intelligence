@@ -1,0 +1,101 @@
+<html>
+<title>CS365 Homework 1</title>
+<style>
+h1{
+	font-family: sans-serif;
+	background-color: black;
+	text-align: center;
+	color: white;
+	opacity: 0.8;
+}
+h2{
+	font-family: sans-serif;
+	opacity: 0.6;
+	color: navy;
+}
+h1.padding{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+body{
+	background-color: white;
+}
+p{
+	width: 100%;
+	font-family: sans-serif;
+	font-size: 20px;
+	opacity: 0.8;
+	float:left;
+}
+body.padding{
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+div.img {
+    margin: 5px;
+    padding: 5px;
+	float: left;  
+    text-align: center;
+}	
+
+div.desc {}
+</style>
+<body class=padding>
+	<h1 class="padding">CS365A-Homework-1</h1>
+	<h2>Curve Fitting using Big Training Set</h2>
+	<p>
+		For the given big training set, the curve is trained for degree of polynomials M=0,1,2,3,5,9 using the <u>polyfit function</u> in MATLAB. Below are the plots of fitted curve on the data for different degrees of ploynomials.(click on images for enlarge view)
+	</p>
+	<br>
+<div class="img">
+ <a target="_blank" href="images/m0_train_b.jpg"><img src="images/m0_train_b.jpg" alt="" width="374px" height="280px"></a>
+ <div class="desc">M=0</div>
+</div>
+<div class="img">
+ <a target="_blank" href="images/m1_train_b.jpg"><img src="images/m1_train_b.jpg" alt="" width="374px" height="280px"></a>
+ <div class="desc">M=1</div>
+</div>
+<div class="img">
+ <a target="_blank" href="images/m2_train_b.jpg"><img src="images/m2_train_b.jpg" alt="" width="374px" height="280px"></a>
+ <div class="desc">M=2</div>
+</div>
+<div class="img">
+ <a target="_blank" href="images/m3_train_b.jpg"><img src="images/m3_train_b.jpg" alt="" width="374px" height="280px"></a>
+ <div class="desc">M=3</div>
+</div>
+<div class="img">
+ <a target="_blank" href="images/m5_train_b.jpg"><img src="images/m5_train_b.jpg" alt="" width="374px" height="280px"></a>
+ <div class="desc">M=5</div>
+</div>
+ <div class="img">
+ <a target="_blank" href="images/m9_train_b.jpg"><img src="images/m9_train_b.jpg" alt="" width="374px" height="280px"></a>
+ <div class="desc">M=9</div>
+</div>
+<br>
+<p>
+	The result for different degree of polynomial for big train data is much different from small train set. The curve obtained from high degree polynomial(M=2,3,5,9) are almost same on visualisation. It shows that for larger train data set even high degree polynomial also shows resaonable fit.
+  <br>To get more insight into the models, we should plot error in the curves for trainnig set and test set as well.
+</p>
+<div class="img">
+ <a target="_blank" href="images/errb_train.jpg"><img src="images/errb_train.jpg" alt="" width="374px" height="280px"></a>
+ <div class="desc">Error(rms) for training set</div>
+</div>
+<div class="img">
+ <a target="_blank" href="images/errb_test.jpg"><img src="images/errb_test.jpg" alt="" width="374px" height="280px"></a>
+ <div class="desc">Error(rms) for Test set</div>
+</div>
+<p> It is clear from above plots that for big training set the error for high degree polynomial remain almost same. The result can be easily deduced using error plot for test data set which shows the optimal degree of polynomial is 2.
+<br>
+<p>
+	Error Plot for Validation set for different degreee polynomials.<br></p>
+	<br>
+<div class="img">
+ <a target="_blank" href="images/errb_valid.jpg"><img src="images/errb_valid.jpg" alt="" width="374px" height="280px"></a>
+ <div class="desc">Error(rms) for Validation set</div>
+</div>
+<p> 
+	In this case validation set is not much useful becuase we already have pretty large training test. The formed curves from the training set are almost same in behaviour and validation is not much required on models.<br><br>
+</p>
+</body>
